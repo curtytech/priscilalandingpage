@@ -5,7 +5,7 @@ Durante 3 meses (12 aulas, uma vez por semana), você aprenderá receitas irresi
 
 * Big Oreo
 * Charuto de Kit Kat
-* Bombom Aberto.  
+* Bombom Aberto
 * Coxinha de Morango
 * Brigadeiros
 * Caseirinhos
