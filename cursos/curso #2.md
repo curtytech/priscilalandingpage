@@ -1,4 +1,4 @@
-Curso Avançado de Chantininho – 100% Prático e Presencial em Alcântara, São Gonçalo!
+# Curso Avançado de Chantininho – 100% Prático e Presencial em Alcântara, São Gonçalo!
 
 ✅ O que você vai aprender:
 Neste curso de 2 meses (8 aulas, uma vez por semana), você dominará técnicas de decoração mais elaboradas e sofisticadas, incluindo:

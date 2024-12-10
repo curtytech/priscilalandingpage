@@ -1,4 +1,4 @@
-Curso Chantininho Descomplicando – 100% Prático e Presencial em Alcântara, São Gonçalo!
+# Curso Chantininho Descomplicando – 100% Prático e Presencial em Alcântara, São Gonçalo!
 
 ✅ Para quem é este curso?
 Perfeito para iniciantes sem experiência ou para quem já conhece o básico, mas quer aprimorar suas técnicas e aprender novas receitas.

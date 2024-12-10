@@ -1,4 +1,4 @@
-Curso Buttercream e Ganache na Prática – 100% Presencial em Alcântara, São Gonçalo!
+# Curso Buttercream e Ganache na Prática – 100% Presencial em Alcântara, São Gonçalo!
 
 ✅ Para quem é este curso?
 

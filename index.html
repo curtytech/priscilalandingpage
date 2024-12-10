@@ -20,20 +20,21 @@
 
 <body class="antialiased">
 	<!-- navbar -->
-	<div x-data="{ open: false }" class="w-full text-gray-700 bg-cream">
+	<div x-data="{ open: false }" class="w-full text-gray-700 bg-yellow-300">
 		<div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
 			<div class="flex flex-row items-center justify-between py-6">
 				<div class="relative md:mt-8">
 					<a href="#"
 						class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">
-						Skilline
+						<!-- Skilline -->
+						<img class="w-60" src="/img/priscila-logo.svg" alt="priscila-logo">
 					</a>
-					<svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none"
+					<!-- <svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z"
 							fill="#65DAFF" />
-					</svg>
+					</svg> -->
 				</div>
 				<button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
 					<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -68,14 +69,14 @@
 		</div>
 	</div>
 
-	<div class="bg-cream">
+	<div class="bg-yellow-300">
 		<div class="max-w-screen-xl px-8 mx-auto flex flex-col lg:flex-row items-start">
 			<!--Left Col-->
 			<div
 				class="flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-start text-center lg:text-left mb-5 md:mb-0">
 				<h1 data-aos="fade-right" data-aos-once="true"
 					class="my-4 text-5xl font-bold leading-tight text-darken">
-					<span class="text-yellow-500">Studying</span> Online is now much easier
+					<span class="text-yellow-500">Transformando</span> iniciantes em confeiteiras de sucesso
 				</h1>
 				<p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="leading-normal text-2xl mb-8">
 					Skilline is an interesting platform that will teach you in more an interactive way</p>
@@ -158,10 +159,10 @@
 	</div>
 
 	<!-- Cursos Section -->
-	<section class="py-20 bg-gray-50">
+	<section class="py-20 bg-white">
 		<div class="container px-4 lg:px-8 mx-auto max-w-screen-xl">
 			<div class="text-center mb-16">
-				<h2 class="text-4xl font-bold text-gray-800 mb-4">Nossos Cursos</h2>
+				<h2 class="text-6xl font-bold text-gray-800 mb-4">Nossos Cursos</h2>
 				<p class="text-gray-600">Transforme sua paixão por confeitaria em arte</p>
 			</div>
 
@@ -270,9 +271,9 @@
 				class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 mt-8">
 				<div class="md:flex">
 					<!-- Left side with icon -->
-					<div class="md:w-1/3 bg-indigo-50 p-8 flex items-center justify-center">
-						<div class="w-32 h-32 bg-indigo-100 rounded-full flex items-center justify-center">
-							<svg class="w-20 h-20 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
+					<div class="md:w-1/3 bg-red-50 p-8 flex items-center justify-center">
+						<div class="w-32 h-32 bg-red-100 rounded-full flex items-center justify-center">
+							<svg class="w-20 h-20 text-red-500" fill="currentColor" viewBox="0 0 20 20">
 								<path
 									d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
 							</svg>
@@ -284,7 +285,7 @@
 						<div class="flex justify-between items-start">
 							<h3 class="text-2xl font-bold text-gray-800">Avançado de Chantininho</h3>
 							<span
-								class="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Presencial</span>
+								class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Presencial</span>
 						</div>
 
 						<p class="mt-4 text-gray-600">Curso 100% prático em Alcântara, São Gonçalo</p>
@@ -292,7 +293,7 @@
 						<!-- Course details -->
 						<div class="mt-6">
 							<div class="flex items-center text-gray-700 mb-3">
-								<svg class="w-5 h-5 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
+								<svg class="w-5 h-5 mr-2 text-red-500" fill="currentColor" viewBox="0 0 20 20">
 									<path
 										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" />
 								</svg>
@@ -328,7 +329,7 @@
 						<!-- Call to action -->
 						<div class="mt-8 flex space-x-4">
 							<button
-								class="flex-1 bg-indigo-500 text-white py-3 px-6 rounded-lg hover:bg-indigo-600 transition-colors duration-300">
+								class="flex-1 bg-red-500 text-white py-3 px-6 rounded-lg hover:bg-red-600 transition-colors duration-300">
 								Saiba Mais
 							</button>
 						</div>
@@ -341,9 +342,9 @@
 				class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 mt-8">
 				<div class="md:flex">
 					<!-- Left side with icon -->
-					<div class="md:w-1/3 bg-teal-50 p-8 flex items-center justify-center">
-						<div class="w-32 h-32 bg-teal-100 rounded-full flex items-center justify-center">
-							<svg class="w-20 h-20 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+					<div class="md:w-1/3 bg-orange-50 p-8 flex items-center justify-center">
+						<div class="w-32 h-32 bg-orange-100 rounded-full flex items-center justify-center">
+							<svg class="w-20 h-20 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
 								<path
 									d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
 							</svg>
@@ -355,7 +356,7 @@
 						<div class="flex justify-between items-start">
 							<h3 class="text-2xl font-bold text-gray-800">Delivery de Confeitaria</h3>
 							<span
-								class="bg-teal-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Presencial</span>
+								class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Presencial</span>
 						</div>
 
 						<p class="mt-4 text-gray-600">Curso 100% prático em Alcântara, São Gonçalo</p>
@@ -363,7 +364,7 @@
 						<!-- Course details -->
 						<div class="mt-6">
 							<div class="flex items-center text-gray-700 mb-3">
-								<svg class="w-5 h-5 mr-2 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+								<svg class="w-5 h-5 mr-2 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
 									<path
 										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" />
 								</svg>
@@ -399,7 +400,7 @@
 						<!-- Call to action -->
 						<div class="mt-8 flex space-x-4">
 							<button
-								class="flex-1 bg-teal-500 text-white py-3 px-6 rounded-lg hover:bg-teal-600 transition-colors duration-300">
+								class="flex-1 bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600 transition-colors duration-300">
 								Saiba Mais
 							</button>
 						</div>
@@ -471,6 +472,79 @@
 						<div class="mt-8 flex space-x-4">
 							<button
 								class="flex-1 bg-yellow-500 text-white py-3 px-6 rounded-lg hover:bg-yellow-600 transition-colors duration-300">
+								Saiba Mais
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Course Card -->
+			<div
+				class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 mt-8">
+				<div class="md:flex">
+					<!-- Left side with icon -->
+					<div class="md:w-1/3 bg-green-50 p-8 flex items-center justify-center">
+						<div class="w-32 h-32 bg-green-100 rounded-full flex items-center justify-center">
+							<svg class="w-20 h-20 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+								<path
+									d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
+							</svg>
+						</div>
+					</div>
+
+					<!-- Right side content -->
+					<div class="md:w-2/3 p-8">
+						<div class="flex justify-between items-start">
+							<h3 class="text-2xl font-bold text-gray-800">
+								Buttercream e Ganache na Prática
+							</h3>
+							<span
+								class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Presencial</span>
+						</div>
+
+						<p class="mt-4 text-gray-600">Curso 100% prático em Alcântara, São Gonçalo</p>
+
+						<!-- Course details -->
+						<div class="mt-6">
+							<div class="flex items-center text-gray-700 mb-3">
+								<svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+									<path
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" />
+								</svg>
+								<span>3 meses - 12 aulas (1x por semana)</span>
+							</div>
+						</div>
+
+						<!-- What you'll learn -->
+						<div class="mt-6">
+							<h4 class="font-semibold text-gray-800 mb-3">O que você vai aprender:</h4>
+							<ul class="space-y-2">
+								<li class="flex items-start">
+									<svg class="w-5 h-5 mr-2 text-green-500 mt-1" fill="currentColor"
+										viewBox="0 0 20 20">
+										<path fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd" />
+									</svg>
+									<span class="text-gray-600">Técnicas profissionais de confeitaria</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 mr-2 text-green-500 mt-1" fill="currentColor"
+										viewBox="0 0 20 20">
+										<path fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd" />
+									</svg>
+									<span class="text-gray-600">Receitas exclusivas e testadas</span>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Call to action -->
+						<div class="mt-8 flex space-x-4">
+							<button
+								class="flex-1 bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transition-colors duration-300">
 								Saiba Mais
 							</button>
 						</div>
