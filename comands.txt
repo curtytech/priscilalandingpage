@@ -1,0 +1,10 @@
+// install vercel
+bun i -g vercel
+
+// subir project
+vercel 
+
+// Atualizar Projeto na Vercel
+vercel --prod
+
+// nome do projeto e phelipecurty
