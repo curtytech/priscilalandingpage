@@ -47,15 +47,12 @@
 				<a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
 					href="#">Home</a>
 				<a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
-					href="#">Careers</a>
+					href="#cursos">Cursos</a>
 				<a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
-					href="#">Blog</a>
+					href="#galeria">Galeria</a>
 				<a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
-					href="#">About Us</a>
-				<a class="px-10 py-3 mt-2 text-sm text-center text-gray-800 bg-white rounded-full md:mt-8 md:ml-4"
-					href="#">Login</a>
-				<a class="px-10 py-3 mt-2 text-sm text-center text-white bg-yellow-500 rounded-full md:mt-8 md:ml-4"
-					href="#">Sign Up</a>
+					href="#depoimentos">Depoimentos</a>
+
 			</nav>
 		</div>
 	</nav>
@@ -75,11 +72,11 @@
 				</p>
 				<div data-aos="fade-up" data-aos-once="true" data-aos-delay="700"
 					class="items-center justify-center w-full md:flex lg:justify-start md:space-x-5">
-					<button
+					<a
 						class="py-4 text-xl font-bold text-white transition duration-300 ease-in-out transform bg-yellow-500 rounded-full lg:mx-0 px-9 focus:outline-none hover:scale-110">
 						Aprenda agora!
-					</button>
-					<div
+					</a>
+					<!-- <div
 						class="flex items-center justify-center mt-5 space-x-3 transition duration-300 ease-in-out transform md:mt-0 focus:outline-none hover:scale-110">
 						<button class="flex items-center justify-center bg-white rounded-full w-14 h-14">
 							<svg class="w-5 h-5 ml-2" viewBox="0 0 24 28" fill="none"
@@ -90,7 +87,7 @@
 							</svg>
 						</button>
 						<span class="cursor-pointer">Assista como funciona</span>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -154,7 +151,7 @@
 	</section>
 
 	<!-- Cursos Section -->
-	<section class="py-20 bg-white">
+	<section class="py-20 bg-white" id="cursos">
 		<div class="container max-w-screen-xl px-4 mx-auto lg:px-8">
 			<div class="mb-16 text-center">
 				<h2 class="mb-4 text-6xl font-bold text-gray-800">Nossos Cursos</h2>
@@ -895,7 +892,7 @@
 		</div>
 
 		<!-- Instagram -->
-		<section class="mt-28">
+		<section class="mt-28" id="galeria">
 			<div data-aos="flip-down" class="max-w-screen-md mx-auto text-center">
 				<h1 class="mb-4 text-3xl font-bold">Nosso<span class="text-yellow-500"> Instagram</span></h1>
 				<p class="text-gray-500">Siga <a class="font-bold text-pink-700" target="_blank"
@@ -916,7 +913,7 @@
 		</section>
 
 		<!-- Testimonials -->
-		<section class="relative py-24 mt-6 overflow-hidden bg-white isolate sm:py-32 lg:px-8">
+		<section class="relative py-24 mt-6 overflow-x-hidden bg-white isolate sm:py-32 lg:px-8">
 			<div
 				class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
 			</div>
@@ -925,7 +922,7 @@
 				class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
 			</div>
 
-			<h3 class="text-3xl font-bold text-center text-gray-800">
+			<h3 class="text-3xl font-bold text-center text-gray-800" id="depoimentos">
 				Depoimentos de quem <span class="text-yellow-500">Confia</span>
 			</h3>
 
@@ -956,7 +953,6 @@
 					</div>
 				</div>
 
-				<!-- Navigation Buttons -->
 				<div class="absolute left-0 flex justify-between w-full -translate-y-1/2 top-1/2">
 					<button @click="prevTestimonial()"
 						class="p-2 text-gray-800 rounded-full bg-white/80 hover:bg-white focus:outline-none">
@@ -975,7 +971,6 @@
 					</button>
 				</div>
 
-				<!-- Dots Navigation -->
 				<div class="flex justify-center mt-8 space-x-2">
 					<template x-for="(testimonial, index) in testimonials" :key="index">
 						<button @click="currentIndex = index"
@@ -986,45 +981,20 @@
 			</div>
 		</section>
 
-		<!-- <div class="items-center mt-6 sm:flex sm:space-x-8">
-			<div data-aos="fade-right" class="relative sm:w-1/2">
-				<div class="absolute z-0 w-12 h-12 bg-yellow-500 rounded-full -left-4 -top-3 animate-pulse"></div>
-				<h1 class="relative z-50 text-2xl font-semibold text-darken lg:pr-10">Everything you can do in a
-					physical classroom, <span class="text-yellow-500">you can do with Skilline</span></h1>
-				<p class="py-5 lg:pr-32">Skilline's school management software helps traditional and online schools
-					manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.
-				</p>
-				<a href="" class="underline">Learn More</a>
-			</div>
-			<div data-aos="fade-left" class="relative mt-10 sm:w-1/2 sm:mt-0">
-				<div style="background: #23BDEE;" class="absolute z-0 w-24 h-24 rounded-lg floating -top-3 -left-3">
-				</div>
-				<img class="relative z-40 rounded-xl" src="img/teacher-explaining.png" alt="">
-				<button
-					class="absolute z-50 flex items-center justify-center transition duration-300 ease-in-out transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-14 h-14 top-1/2 left-1/2 focus:outline-none hover:scale-110">
-					<svg class="w-5 h-5 ml-1" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M22.5751 12.8097C23.2212 13.1983 23.2212 14.135 22.5751 14.5236L1.51538 27.1891C0.848878 27.5899 5.91205e-07 27.1099 6.25202e-07 26.3321L1.73245e-06 1.00123C1.76645e-06 0.223477 0.848877 -0.256572 1.51538 0.14427L22.5751 12.8097Z"
-							fill="#23BDEE" />
-					</svg>
-				</button>
-				<div class="absolute z-10 w-40 h-40 bg-yellow-500 rounded-lg floating -bottom-3 -right-3"></div>
-			</div>
-		</div> -->
+		<div class="relative isolate items-start mt-40 md:flex md:space-x-10 overflow-x-hidden">
 
-		<div class="items-start mt-40 md:flex md:space-x-10">
 			<div data-aos="fade-down" class="relative md:w-7/12">
-				<div style="background: #33EFA0"
+				<!-- <div style="background: #33EFA0"
 					class="absolute z-0 w-32 h-32 rounded-full left-4 -top-12 animate-pulse"></div>
 				<div style="background: #33D9EF;"
-					class="absolute z-0 w-5 h-5 rounded-full left-36 -top-12 animate-ping"></div>
+					class="absolute z-0 w-5 h-5 rounded-full left-36 -top-12 animate-ping"></div> -->
 				<img class="relative z-50 rounded-lg floating" src="img/priscila/vcall2.png" alt="">
-				<div style="background: #5B61EB;"
+				<!-- <div style="background: #5B61EB;"
 					class="absolute z-0 rounded-full w-36 h-36 right-16 -bottom-1 animate-pulse"></div>
 				<div style="background: #F56666;"
-					class="absolute z-0 w-5 h-5 rounded-full right-52 bottom-1 animate-ping"></div>
+					class="absolute z-0 w-5 h-5 rounded-full right-52 bottom-1 animate-ping"></div> -->
 			</div>
-			<div data-aos="fade-down" class="mt-20 text-gray-500 md:w-5/12 md:mt-0">
+			<div data-aos="fade-down" class="mt-20 text-gray-500 md:w-5/12 md:mt-0 ">
 				<h1 class="text-2xl font-semibold text-darken">
 					Um pouco sobre a <br />
 					<span class="text-yellow-500">Priscila Ribeiro</span>
@@ -1035,228 +1005,10 @@
 						criar bolos e doces lindos, saborosos e lucrativos, gerando renda extra direto da cozinha de
 						casa. Já formei mais de 500 alunas presenciais e meu objetivo é compartilhar conhecimento para
 						que você alcance independência financeira com a confeitaria. Venha aprender com quem
-						realmente ensina!</p>
+						realmente ensina!</p>
 				</div>
 			</div>
 		</div>
-
-		<!-- <div class="items-start mt-40 md:flex md:space-x-10">
-			<div data-aos="fade-down" class="relative md:w-7/12">
-				<div style="background: #33EFA0"
-					class="absolute z-0 w-32 h-32 rounded-full left-4 -top-12 animate-pulse"></div>
-				<div style="background: #33D9EF;"
-					class="absolute z-0 w-5 h-5 rounded-full left-36 -top-12 animate-ping"></div>
-				<img class="relative z-50 floating" src="img/vcall.png" alt="">
-				<div style="background: #5B61EB;"
-					class="absolute z-0 rounded-full w-36 h-36 right-16 -bottom-1 animate-pulse"></div>
-				<div style="background: #F56666;"
-					class="absolute z-0 w-5 h-5 rounded-full right-52 bottom-1 animate-ping"></div>
-			</div>
-			<div data-aos="fade-down" class="mt-20 text-gray-500 md:w-5/12 md:mt-0">
-				<h1 class="text-2xl font-semibold text-darken lg:pr-40">A <span class="text-yellow-500">user
-						interface</span> designed for the classroom</h1>
-				<div class="flex items-center my-5 space-x-5">
-					<div class="flex items-center justify-center flex-shrink p-3 bg-white rounded-full shadow-lg">
-						<svg class="w-4 h-4" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="11.8182" height="11.8182" rx="2" fill="#2F327D" />
-							<rect y="14.1816" width="11.8182" height="11.8182" rx="2" fill="#2F327D" />
-							<rect x="14.7727" width="11.8182" height="11.8182" rx="2" fill="#2F327D" />
-							<rect x="14.7727" y="14.1816" width="11.8182" height="11.8182" rx="2" fill="#F48C06" />
-						</svg>
-					</div>
-					<p>Teachers don't get lost in the grid view and have a dedicated Podium space.</p>
-				</div>
-				<div class="flex items-center my-5 space-x-5">
-					<div class="flex items-center justify-center flex-shrink p-3 bg-white rounded-full shadow-lg">
-						<svg class="w-4 h-4" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect x="8" y="6" width="20" height="20" rx="2" fill="#2F327D" />
-							<rect width="21.2245" height="21.2245" rx="2" fill="#F48C06" />
-						</svg>
-					</div>
-					<p>TA's and presenters can be moved to the front of the class.</p>
-				</div>
-				<div class="flex items-center my-5 space-x-5">
-					<div class="flex items-center justify-center flex-shrink p-3 bg-white rounded-full shadow-lg">
-						<svg class="w-4 h-4" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M4.5 11.375C6.15469 11.375 7.5 9.91758 7.5 8.125C7.5 6.33242 6.15469 4.875 4.5 4.875C2.84531 4.875 1.5 6.33242 1.5 8.125C1.5 9.91758 2.84531 11.375 4.5 11.375ZM25.5 11.375C27.1547 11.375 28.5 9.91758 28.5 8.125C28.5 6.33242 27.1547 4.875 25.5 4.875C23.8453 4.875 22.5 6.33242 22.5 8.125C22.5 9.91758 23.8453 11.375 25.5 11.375ZM27 13H24C23.175 13 22.4297 13.3605 21.8859 13.9445C23.775 15.0668 25.1156 17.093 25.4062 19.5H28.5C29.3297 19.5 30 18.7738 30 17.875V16.25C30 14.4574 28.6547 13 27 13ZM15 13C17.9016 13 20.25 10.4559 20.25 7.3125C20.25 4.16914 17.9016 1.625 15 1.625C12.0984 1.625 9.75 4.16914 9.75 7.3125C9.75 10.4559 12.0984 13 15 13ZM18.6 14.625H18.2109C17.2359 15.1328 16.1531 15.4375 15 15.4375C13.8469 15.4375 12.7688 15.1328 11.7891 14.625H11.4C8.41875 14.625 6 17.2453 6 20.475V21.9375C6 23.2832 7.00781 24.375 8.25 24.375H21.75C22.9922 24.375 24 23.2832 24 21.9375V20.475C24 17.2453 21.5812 14.625 18.6 14.625ZM8.11406 13.9445C7.57031 13.3605 6.825 13 6 13H3C1.34531 13 0 14.4574 0 16.25V17.875C0 18.7738 0.670312 19.5 1.5 19.5H4.58906C4.88438 17.093 6.225 15.0668 8.11406 13.9445Z"
-								fill="#2F327D" />
-						</svg>
-					</div>
-					<p>Teachers can easily see all students and class data at one time.</p>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- Tools For Teachers And Learners -->
-		<!-- <div class="flex flex-col items-center mt-16 md:flex-row md:space-x-10">
-			<div data-aos="fade-right" class="md:w-1/2 lg:pl-14">
-				<h1 class="text-3xl font-semibold text-darken lg:pr-56"><span class="text-yellow-500">Tools</span> For
-					Teachers And Learners</h1>
-				<p class="my-4 text-gray-500 lg:pr-32">Class has a dynamic set of teaching tools built to be deployed
-					and used during class. Teachers can handout assignments in real-time for students to complete and
-					submit.</p>
-			</div>
-			<img data-aos="fade-left" class="md:w-1/2" src="img/girl-with-books.png">
-		</div> -->
-
-		<!-- Assessments, Quizzes, Tests -->
-		<!-- <div class="flex flex-col-reverse items-center mt-20 md:flex-row md:space-x-10">
-			<div data-aos="fade-right" class="md:w-6/12">
-				<img class="md:w-11/12" src="img/true-false.png">
-			</div>
-			<div data-aos="fade-left" class="md:w-6/12 md:transform md:-translate-y-20">
-				<h1 class="text-3xl font-semibold text-darken lg:pr-64">Assessments, <span
-						class="text-yellow-500">Quizzes</span>, Tests</h1>
-				<p class="my-5 text-gray-500 lg:pr-52">Easily launch live assignments, quizzes, and tests. Student
-					results are automatically entered in the online gradebook.</p>
-			</div>
-		</div> -->
-
-		<!-- Class Management Tools for Educators -->
-		<!-- <div class="flex flex-col items-center mt-12 md:flex-row">
-			<div data-aos="fade-right" class="md:w-5/12">
-				<h1 class="text-3xl font-semibold leading-tight text-darken lg:pr-32"><span
-						class="text-yellow-500">Class Management</span> Tools for Educators</h1>
-				<p class="my-5 lg:pr-14">Class provides tools to help run and manage the class such as Class Roster,
-					Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in
-					real-time.</p>
-			</div>
-			<img data-aos="fade-left" class="md:w-7/12" src="img/gradebook.png">
-		</div> -->
-
-		<!-- One-on-One Discussions -->
-		<!-- <div class="flex flex-col-reverse items-center mt-24 md:flex-row md:space-x-10">
-			<div data-aos="fade-right" class="md:w-7/12">
-				<img class="md:w-11/12" src="img/discussion.png">
-			</div>
-			<div data-aos="fade-left" class="md:w-5/12 md:transform md:-translate-y-6">
-				<h1 class="text-3xl font-semibold text-darken lg:pr-64">One-on-One <span
-						class="text-yellow-500">Discussions</span></h1>
-				<p class="my-5 text-gray-500 lg:pr-24">Teachers and teacher assistants can talk with students privately
-					without leaving the Zoom environment.</p>
-			</div>
-		</div>
-
-		<button data-aos="flip-up"
-			class="block px-5 py-3 mx-auto font-medium text-yellow-500 transition duration-300 ease-in-out transform border border-yellow-500 rounded-full my-14 focus:outline-none hover:scale-110">See
-			more features</button> -->
-
-		<!-- INTEGRATIONS -->
-		<!-- <div class="flex flex-col items-start mt-24 md:flex-row md:space-x-10">
-			<div data-aos="zoom-in-right" class="md:w-6/12">
-				<img class="mx-auto md:w-8/12" src="img/integrations.png">
-			</div>
-			<div data-aos="zoom-in-left" class="md:w-6/12">
-				<div class="flex items-center mb-5 space-x-20">
-					<span class="absolute border border-gray-300 w-14"></span>
-					<h1 class="text-sm tracking-widest text-gray-400">INTEGRATIONS</h1>
-				</div>
-				<h1 class="text-2xl font-semibold text-darken lg:pr-40">200+ educational tools and platform <span
-						class="text-yellow-500">integrations</span></h1>
-				<p class="my-5 text-gray-500 lg:pr-20">Schoology has every tool your classroom needs and comes
-					pre-integrated with more than 200+ tools, student information systems (SIS), and education
-					platforms.</p>
-				<button
-					class="px-5 py-3 my-4 font-medium text-yellow-500 transition duration-300 ease-in-out transform border border-yellow-500 rounded-full focus:outline-none hover:scale-110">See
-					All Integrations</button>
-			</div>
-		</div> -->
-
-		<!-- TESTIMONIAL -->
-		<!-- <div class="flex flex-col-reverse items-start mt-24 md:flex-row md:space-x-10">
-			<div data-aos="zoom-in-right" class="md:w-5/12">
-				<div class="flex items-center mb-5 space-x-20">
-					<span class="absolute border border-gray-300 w-14"></span>
-					<h1 class="text-sm tracking-widest text-gray-400">TESTIMONIAL</h1>
-				</div>
-				<h1 class="text-2xl font-semibold text-darken lg:pr-40">What They Say?</h1>
-				<p class="my-5 text-gray-500 lg:pr-36">Skilline has got more than 100k positive ratings from our users
-					around the world.</p>
-				<p class="my-5 text-gray-500 lg:pr-36">Some of the students and teachers were greatly helped by the
-					Skilline.</p>
-				<p class="my-5 text-gray-500 lg:pr-36">Are you too? Please give your assessment</p>
-				<button
-					class="flex items-center pl-3 my-4 space-x-3 font-medium text-yellow-500 transition duration-300 ease-in-out transform border-t border-b border-l border-yellow-500 rounded-full focus:outline-none hover:scale-110">
-					<span>Write your assessment</span>
-					<div class="flex items-center justify-center border border-yellow-500 rounded-full h-14 w-14">
-						<svg class="w-5 h-5" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.2929L19.3431 0.928934C18.9526 0.538409 18.3195 0.538409 17.9289 0.928934C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM-8.74228e-08 9L25 9L25 7L8.74228e-08 7L-8.74228e-08 9Z"
-								fill="#F48C06" />
-						</svg>
-					</div>
-				</button>
-			</div>
-			<div data-aos="zoom-in-left" class="md:w-7/12">
-				<img class="mx-auto md:w-10/12" src="img/testimonials.png">
-			</div>
-		</div> -->
-
-		<!-- Latest News and Resources -->
-		<!-- <div data-aos="zoom-in" class="mt-16 text-center">
-			<h1 class="text-2xl font-semibold text-darken">Latest News and Resources</h1>
-			<p class="my-5 text-gray-500">See the developments that have occurred to Skillines in the world</p>
-		</div>
-		<div data-aos="zoom-in-up" class="flex flex-col my-14 lg:flex-row lg:space-x-20">
-			<div class="lg:w-6/12">
-				<img class="w-full mb-6" src="img/laptop-news.png">
-				<span class="px-4 py-px text-sm font-semibold bg-yellow-300 rounded-full text-darken">NEWS</span>
-				<h1 class="my-3 text-xl font-semibold text-gray-800">Class adds $30 million to its balance sheet for a
-					Zoom-friendly edtech solution</h1>
-				<p class="mb-3 text-gray-500">Class, launched less than a year ago by Blackboard co-founder Michael
-					Chasen, integrates exclusively...</p>
-				<a href="" class="underline">Read more</a>
-			</div>
-			<div class="flex flex-col justify-between mt-12 space-y-5 lg:w-7/12 lg:space-y-0 lg:mt-0">
-				<div class="flex space-x-5">
-					<div class="w-4/12">
-						<div class="relative">
-							<img class="w-full rounded-xl" src="img/children-laptop.png">
-							<span
-								class="absolute hidden px-4 py-px text-sm font-semibold bg-yellow-300 rounded-full bottom-2 right-2 text-darken sm:block">PRESS
-								RELEASE</span>
-						</div>
-					</div>
-					<div class="w-8/12">
-						<h1 class="text-sm font-semibold text-gray-800 sm:text-lg">Class Technologies Inc. Closes $30
-							Million Series A Financing to Meet High Demand</h1>
-						<p class="my-2 text-xs text-gray-500 sm:my-4 sm:text-md">Class Technologies Inc., the company
-							that created Class,...</p>
-					</div>
-				</div>
-				<div class="flex space-x-5">
-					<div class="w-4/12">
-						<div class="relative">
-							<img class="w-full rounded-xl" src="img/girl-laptop.png">
-							<span
-								class="absolute hidden px-4 py-px text-sm font-semibold bg-yellow-300 rounded-full bottom-2 right-2 text-darken sm:block">NEWS</span>
-						</div>
-					</div>
-					<div class="w-8/12">
-						<h1 class="text-sm font-semibold text-gray-800 sm:text-lg">Zoom's earliest investors are betting
-							millions on a better Zoom for schools</h1>
-						<p class="my-2 text-xs text-gray-500 sm:my-4 sm:text-md">Zoom was never created to be a consumer
-							product. Nonetheless, the...</p>
-					</div>
-				</div>
-				<div class="flex space-x-5">
-					<div class="w-4/12">
-						<div class="relative">
-							<img class="w-full rounded-xl" src="img/cat-laptop.png">
-							<span
-								class="absolute hidden px-4 py-px text-sm font-semibold bg-yellow-300 rounded-full bottom-2 right-2 text-darken sm:block">NEWS</span>
-						</div>
-					</div>
-					<div class="w-8/12">
-						<h1 class="text-sm font-semibold text-gray-800 sm:text-lg">Former Blackboard CEO Raises $16M to
-							Bring LMS Features to Zoom Classrooms</h1>
-						<p class="my-2 text-xs text-gray-500 sm:my-4 sm:text-md">This year, investors have reaped big
-							financial returns from betting on Zoom...</p>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 	</div>
 	<!-- .container -->
