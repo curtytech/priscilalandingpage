@@ -1,3 +1,8 @@
+bun update 
+
+bun run dev
+
+
 // install vercel
 bun i -g vercel
 
